@@ -187,7 +187,8 @@ footer{
 
     main{
         width: 320px;
-        margin: auto;
+        position: relative;
+        left: 10px;
     }
 
 
@@ -242,8 +243,9 @@ footer{
         height: 375px;
     }
 
-    .imagem-masc-1{
-        display: none;
+    .texto-masc{
+        margin-bottom: -80px;
+        margin-top: 70px;
     }
 
     .texto-maior{
@@ -271,7 +273,7 @@ footer{
         flex-direction: column;
     }
     .img-feminino{
-        width: 280px;
+        width: 300px;
         height: 375px;
     }
 
@@ -281,6 +283,11 @@ footer{
         text-align: center;
         display: -webkit-box;
         -webkit-line-clamp: 5;
+    }
+
+    .texto-feminino{
+        margin-top: 80px;
+        margin-bottom: -30px;
     }
     /* Fim do feminino */
 
