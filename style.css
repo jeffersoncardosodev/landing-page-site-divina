@@ -1,0 +1,287 @@
+:root{
+    --laranja: #fc5812;
+    --preto: #000;
+    --branco: #fff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "roboto", sans-serif;
+}
+
+main{
+    width: 1140px;
+    margin: auto;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color: var(--preto);
+}
+
+a:hover{
+    color: var(--laranja);
+}
+
+h1{
+    color: var(--laranja);
+    font-size: 40px;
+}
+
+.nav{
+    text-align: center;
+    align-items: center;
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    width: 500px;
+    font-size: 24px;
+}
+
+/* Home */
+.title-moda{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.texto-principal{
+    margin-bottom: 50px;
+}
+
+.cartoes{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.cartao{
+    width: 300px;
+    height: 610px;
+
+}
+
+.top-model{
+    text-align: center;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.texto-card{
+    padding: 10px;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.btn-card{
+    position: relative;
+    left: 85px;
+}
+/* fim home */
+
+
+/* Masculino */
+.imagens{
+    display: flex;
+    justify-content: space-around;
+    gap: 16px;
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+
+.texto{
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.texto-maior{
+    text-align: left;
+    margin-bottom: 180px;
+}
+
+.texto-masc{
+    font-size: 36px;
+    margin-top: 150px;
+    margin-bottom: 30px;
+}
+/* Fim Masculino*/
+
+
+/* Feminino */
+.texto-feminino{
+    font-size: 36px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.img-feminino{
+    width: 375px;
+    margin-top: 70px;
+}
+
+.imagens-feminino{
+    display: flex;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+.image-models{
+    margin-bottom: 100px;
+}
+
+.texto-principal{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+/* Fim Feminino */
+
+
+/* Rodapé */
+button{
+    width: 128px;
+    height: 42px;
+    border-radius: 4px;
+    background-color: var(--laranja);
+    color: var(--branco);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+button:hover{
+    background-color: var(--branco);
+    color: var(--laranja);
+    
+}
+
+footer{
+    background-color: var(--laranja);
+    padding: 30px;
+    text-align: center;
+    color: var(--branco);
+
+}
+/* Fim do rodapé */
+
+@media(max-width:720px) and (min-width:320px){
+    body{
+        width: 100%;
+    }
+
+    nav, ul, li{
+        display: none;
+    }
+
+    main{
+        width: 320px;
+        margin: auto;
+    }
+
+
+    .title-moda{
+        text-align: center;
+        margin-top: 80px;
+    }
+
+    .texto-principal-home{
+        font-size: 14px;
+        max-width: 300px;
+        text-align: center;
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        margin-bottom: 30px;
+    }
+    .section-home{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cartoes{
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    fieldset{
+        width: 300px;
+    }
+
+
+    .image-models{
+        display: none;
+    }
+
+    /* masculino */
+
+    .section-masc{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .imagens{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+    .imagens img{
+        width: 300px;
+        height: 375px;
+    }
+
+    .imagem-masc-1{
+        display: none;
+    }
+
+    .texto-maior{
+        font-size: 14px;
+        text-align: center;
+        max-width: 300px;
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+    }
+    /* Fim masculino */
+
+
+   
+    /* Feminino*/
+
+    .section-feminino{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .images-feminino{
+        display: flex;
+        flex-direction: column;
+    }
+    .img-feminino{
+        width: 280px;
+        height: 375px;
+    }
+
+    .texto-principal{
+        font-size: 14px;
+        max-width: 300px;
+        text-align: center;
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+    }
+    /* Fim do feminino */
+
+}
