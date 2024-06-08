@@ -216,6 +216,17 @@ footer{
         gap: 18px;
     }
 
+    .btn-card{
+        background-color: var(--laranja);
+        color: var(--branco);
+    }
+
+    .btn-card:hover{
+        background-color: var(--branco);
+        color: var(--laranja);
+        border: 1px solid #fc5812;
+    }
+
     fieldset{
         width: 300px;
     }
